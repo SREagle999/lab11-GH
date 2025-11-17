@@ -47,9 +47,9 @@ def main():
                 if sub[1] == ida:
                     grades.append(int(sub[2]))
             if opt == "2":
-                print(f"Min: {min(grades)}")
-                print(f"Avg: {sum(grades)/len(grades):.0f}")
-                print(f"Max: {max(grades)}")
+                print(f"Min: {min(grades)}%")
+                print(f"Avg: {round(sum(grades)/len(grades))}%")
+                print(f"Max: {max(grades)}%")
             elif opt == "3":
                 bins = [0,10,20,30,40,50,60,70,80,90,100]
                 plt.hist(grades,bins)
