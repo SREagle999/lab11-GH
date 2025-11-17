@@ -36,6 +36,8 @@ def main():
                             weight = int(values[1])/1000
                             grade += int(sub[2]) * weight
             print(f"{grade:.0f}%")
+        else:
+            print("Student not found")
     # try combining opt 2 with opt 3 in iterating through assignment
     elif opt == "2" or opt == "3":
         assignment = input("What is the assignment name: ")
@@ -54,6 +56,8 @@ def main():
                 bins = [0,10,20,30,40,50,60,70,80,90,100]
                 plt.hist(grades,bins)
                 plt.show()
+        else:
+            print("Assignment not found")
 
 if __name__ == "__main__":
     main()
