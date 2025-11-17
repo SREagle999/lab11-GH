@@ -8,9 +8,6 @@ def main():
     students = {}
     for item in students_text.readlines():
         students[item[3:-1].lower()] = item[0:3]
-
-    print(students)
-
     # assignment list creation; also consider making a list of student, assignment, and submission objects for practicality / error handling
     assignments_text = open("data/assignments.txt", "r")
     # dictionary with all assignments titles as keys and ids, points as values
